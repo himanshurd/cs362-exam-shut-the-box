@@ -8,8 +8,9 @@ describe 'A die' do
       expect(die.number_of_sides).to eq(6)
     end
 
-    it 'TODO' do
-      skip
+    it 'face value' do
+      die = Die.new(6)
+      expect(die.random_face_value).to eq(1)
     end
   end
 
