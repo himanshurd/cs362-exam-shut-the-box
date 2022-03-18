@@ -17,7 +17,7 @@ describe 'A die' do
   describe 'number of sides' do
     it 'has six sides by default' do
       die = Die.new(6)
-      expect(die.)
+      expect(die.number_of_sides).to eq(6)
     end
 
     it 'can be created with a custom number of sides' do
@@ -27,7 +27,8 @@ describe 'A die' do
 
   describe 'face value' do
     it 'has a face value of 1 by default' do
-      skip
+      die = Die.new(6)
+      expect(die.face_value).to eq(1)
     end
   end
 

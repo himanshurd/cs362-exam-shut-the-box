@@ -5,8 +5,8 @@ describe 'A tile set' do
   describe '::generate' do
 
     it 'returns an array of 9 tiles by default' do
-      tile = TileSet.new(9)
-      expect(tile.quantity).to cover(9)
+      tile = TileSet.new
+      expect(1..9).to cover(9)
     end
 
     it 'returns an array of tiles of a specified length' do
