@@ -16,7 +16,8 @@ describe 'A die' do
 
   describe 'number of sides' do
     it 'has six sides by default' do
-      skip
+      die = Die.new(6)
+      expect(die.)
     end
 
     it 'can be created with a custom number of sides' do
