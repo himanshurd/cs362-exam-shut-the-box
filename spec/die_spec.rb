@@ -10,7 +10,7 @@ describe 'A die' do
 
     it 'face value' do
       die = Die.new(6)
-      expect(die.random_face_value).to eq(1)
+      expect(die.face_value).to eq(1)
     end
   end
 
